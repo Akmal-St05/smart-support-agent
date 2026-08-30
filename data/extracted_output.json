@@ -52,15 +52,15 @@
     "issue_type": "Access Issue",
     "urgency": "high",
     "region": "unspecified",
-    "summary": "User is unable to log in due to a blank white screen that fails to load.",
+    "summary": "User is unable to log in due to a blank page that fails to load.",
     "ticket_id": "T007"
   },
   {
     "product_area": "Login",
     "issue_type": "Access Issue",
-    "urgency": "high",
+    "urgency": "medium",
     "region": "unspecified",
-    "summary": "User is unable to reset password because the reset email is not being received.",
+    "summary": "User is unable to receive password reset emails.",
     "ticket_id": "T008"
   },
   {
@@ -108,7 +108,7 @@
     "issue_type": "Access Issue",
     "urgency": "medium",
     "region": "unspecified",
-    "summary": "User is unable to reset their password because the reset email was not received.",
+    "summary": "User is unable to reset their password because the reset email was never received.",
     "ticket_id": "T014"
   },
   {
