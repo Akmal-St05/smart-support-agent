@@ -4,5 +4,5 @@ to activate venv use.. `source .venv/bin/activate`
 
 Run setup_env.bat first
 
-
+gcloud auth application-default login
 

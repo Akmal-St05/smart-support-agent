@@ -37,8 +37,7 @@ if not PROJECT_ID:
     raise EnvironmentError("GCP_PROJECT_ID is not set. Add it to .env or export it before running the script.")
 
 # CHANGE THIS to the exact bucket name you created in Step 2.2
-BUCKET_NAME = "sincere-amulet-507008-j2-embeddings"
-
+BUCKET_NAME = "akmal346823"
 BASE_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = BASE_DIR.parent
 INPUT_FILE = str(PROJECT_ROOT / "data" / "historical_incidents.json")

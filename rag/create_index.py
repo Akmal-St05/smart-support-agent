@@ -25,7 +25,7 @@ if not PROJECT_ID:
         "GCP_PROJECT_ID is not set. Add it to your .env file."
     )
 
-BUCKET_NAME = "epc-platform-507008-embeddings"
+BUCKET_NAME = "akmal346823"
 
 aiplatform.init(
     project=PROJECT_ID,
