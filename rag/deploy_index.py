@@ -23,7 +23,7 @@ if not PROJECT_ID:
     raise EnvironmentError("GCP_PROJECT_ID is not set. Add it to your .env file.")
 
 # PASTE the full "Index resource name" you copied from Step 2.8
-INDEX_RESOURCE_NAME = "projects/601542443603/locations/us-east1/indexes/4017012955521482752"
+INDEX_RESOURCE_NAME = "projects/601542443603/locations/us-east1/indexes/5275769051371536384"
 
 aiplatform.init(project=PROJECT_ID, location=LOCATION)
 
@@ -41,7 +41,7 @@ print("\nDeploying index to endpoint. This takes 20-40 minutes. Please wait...")
 
 index_endpoint.deploy_index(
     index=index,
-    deployed_index_id="epc_incidents_deployed",
+    deployed_index_id="epc_incidents_deployed1",
 )
 
 print("\nDeployment complete!")

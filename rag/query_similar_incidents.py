@@ -27,8 +27,8 @@ EMBEDDING_MODEL_NAME = "text-embedding-004"  # kept same as generate_embeddings.
 # so query vectors match the 768-dim vectors already stored in the index.
 
 # PASTE your values from Step 2.9
-INDEX_ENDPOINT_RESOURCE_NAME = "projects/411440897339/locations/us-east1/indexEndpoints/1220875721249914880"
-DEPLOYED_INDEX_ID = "epc_incidents_deployed"
+INDEX_ENDPOINT_RESOURCE_NAME = "projects/601542443603/locations/us-east1/indexEndpoints/3548533041158684672"
+DEPLOYED_INDEX_ID = "epc_incidents_deployed1"
 
 INCIDENTS_FILE = "../data/historical_incidents.json"
 
