@@ -3,22 +3,30 @@ main:
   steps:
     - init:
         assign:
-          - service_url: "https://epc-pipeline-service-601542443603.us-east1.run.app"
+          - service_url: "https://epc-pipeline-service-523210992748.us-east1.run.app"
           - ticket_id: ${input.ticket_id}
           - raw_text: ${input.raw_text}
           - source: ${input.source}
           - timestamp: ${input.timestamp}
 
     - extract_step:
-        call: http.post
-        args:
-          url: ${service_url + "/extract"}
-          body:
-            ticket_id: ${ticket_id}
-            raw_text: ${raw_text}
-            source: ${source}
-            timestamp: ${timestamp}
-        result: extract_result
+        try:
+          call: http.post
+          args:
+            url: ${service_url + "/extract"}
+            body:
+              ticket_id: ${ticket_id}
+              raw_text: ${raw_text}
+              source: ${source}
+              timestamp: ${timestamp}
+          result: extract_result
+        retry:
+          predicate: ${custom_retry_predicate}
+          max_retries: 10
+          backoff:
+            initial_delay: 2
+            max_delay: 120
+            multiplier: 1.5
 
     - assigning_groups:
         try:
