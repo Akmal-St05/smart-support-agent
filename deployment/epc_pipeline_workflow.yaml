@@ -3,7 +3,7 @@ main:
   steps:
     - init:
         assign:
-          - service_url: "https://epc-pipeline-service-523210992748.us-east1.run.app"
+          - service_url: "https://epc-pipeline-service-601542443603.us-east1.run.app"
           - ticket_id: ${input.ticket_id}
           - raw_text: ${input.raw_text}
           - source: ${input.source}
